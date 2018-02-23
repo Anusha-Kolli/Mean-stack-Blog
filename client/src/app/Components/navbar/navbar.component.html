@@ -24,7 +24,7 @@
         <li ><a routerLink = '/contact' class = nav-link>Blog</a></li>
         <li ><a routerLink = '/contact' class = nav-link>Login</a></li>
         <li ><a routerLink = '/contact' class = nav-link>Logout</a></li>
-        <li ><a routerLink = '/contact' class = nav-link>Register</a></li>
+        <li [routerLinkActive]= "['active']" [routerLinkActiveOptions]= "{exact:true}"><a routerLink = '/register' class = nav-link>Register</a></li>
       </ul>
     </div>
     </div> 

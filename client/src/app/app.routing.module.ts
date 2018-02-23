@@ -1,7 +1,8 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
-import {HomeComponent} from './Components/home/home.component'
-import {DashboardComponent } from './Components/dashboard/dashboard.component'
+import {HomeComponent} from './Components/home/home.component';
+import {DashboardComponent } from './Components/dashboard/dashboard.component';
+import {RegisterComponent} from './Components/register/register.component'
 
 const appRoutes: Routes = [
 { 
@@ -11,6 +12,11 @@ const appRoutes: Routes = [
 { 
   path : 'dashboard',
   component:DashboardComponent
+},
+{
+  path : 'register',
+  component:RegisterComponent
+
 },
 { path: '**', component: HomeComponent }
 ];
